@@ -46,7 +46,7 @@ class OrderService
             $result['msg'] = 'success';
             $result['data'] = $res;
         }catch(Exception $e){
-            $result['msg'] = 'fail';
+            $result['msg'] = 'fail : '.$e->getMessage();
             $result['code'] = 404;
         }
         
