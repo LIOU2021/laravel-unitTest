@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TestController;
 use App\Service\OrderService;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -22,3 +23,5 @@ use Illuminate\Support\Facades\Route;
 Route::post('order',[OrderService::class,'create2']);
 
 Route::post('user',[OrderService::class,'create3']);
+
+Route::get('test1',[TestController::class,'index']);
